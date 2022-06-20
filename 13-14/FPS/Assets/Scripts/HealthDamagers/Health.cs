@@ -15,18 +15,17 @@ public class Health : MonoBehaviour
 
     void Awake()
     {
-        if (OnHealthEnd == null)
-            OnHealthEnd = new UnityEvent();
-        if (OnHealthValueChanged == null)
-            OnHealthValueChanged = new UnityEventHealth();
+        OnHealthEnd ??= new UnityEvent();
+        OnHealthValueChanged ??= new UnityEventHealth();
         _currentHealth = _maxHealth;
     }
 
-    public void Hit(float damage)
+    public float Hit(float damage)
     {
         if (damage <= 0)
-            return;
+            return 0;
 
+        float res = Mathf.Max(damage, _currentHealth);
         _currentHealth = Mathf.Clamp(_currentHealth - damage, 0, _maxHealth);
         OnHealthValueChanged.Invoke(new HealthEventArgs()
         {
@@ -36,17 +35,22 @@ public class Health : MonoBehaviour
 
         if (_currentHealth <= 0)
             OnHealthEnd.Invoke();
+
+        return res;
     }
 
-    public void AddHealth(float health)
+    public float AddHealth(float health)
     {
         if (health <= 0)
-            return;
+            return 0;
+
+        float res = Mathf.Min(health, MaxHealth - _currentHealth);
         _currentHealth = Mathf.Clamp(_currentHealth + health, 0, _maxHealth);
         OnHealthValueChanged.Invoke(new HealthEventArgs()
         {
             CurrentHealth = _currentHealth,
             MaxHealth = _maxHealth
         });
+        return res;
     }
 }
