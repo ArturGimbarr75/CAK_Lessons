@@ -18,6 +18,7 @@ public class GroundedCheck : MonoBehaviour
     {
         Vector3 pos = GetRayStartPosition();
         bool temp = Physics.Raycast(pos, Vector3.down, _rayLength);
+        Physics.Raycast(pos, Vector3.down, out RaycastHit hit);
 
         if (temp && temp != IsGrounded)
         {

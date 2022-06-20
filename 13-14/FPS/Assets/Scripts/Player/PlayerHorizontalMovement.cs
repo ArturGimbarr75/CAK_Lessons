@@ -21,7 +21,7 @@ public class PlayerHorizontalMovement : MonoBehaviour
     {
         _rigidbody = GetComponent<Rigidbody>();
         _playerCrouching = GetComponent<PlayerCrouching>();
-        _speedInAir = GetComponent<float>();
+        _groundedCheck = GetComponent<GroundedCheck>();
     }
 
     void Update()
