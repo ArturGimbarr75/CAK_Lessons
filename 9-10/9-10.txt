@@ -1,0 +1,9 @@
+--
+9-10m. galima būtų eit per game dizainą ((minimaliai kodo)) (Martynas)
+--
+
+1 trimestras
+pirmos trys pamokos - susiskirstymas grupėm ir darom mėgstamų žaidimų analizę.
+darom skirtingas mechanikas - skirtingus geimus po kelias pamokas. Galim įvest tiesiog vieną kitą game dizaino pamoką.
+2 trimestras - same
+3 trimestras - puse trimestro savarankiškas projektas (apjungimas sukurtų mechanikų, patobulinimas į vientisą žaidimą);

@@ -1,0 +1,12 @@
+--
+10-11m. NFT (Artur)
+--
+
+1 trimestras
+kas yra NFT. viena - dvi pamokos max; (tikslas NFT, papasakot kad galima uždirbt, parodyt realius pavyzdžius),
+kuriam characterius (nft assetus) + Unity (raw medžiaga);
+2 trimestras
+darom customization'ą / piešiam assetus kur gali susikurt savo charus customus;
+3 trimestras
+viena game dizaino pamoka,
+savarankiškas geimas + panaudojam nupieštus assetus. Sukurt reikalavimus / apriboti kažkiek;

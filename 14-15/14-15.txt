@@ -1,0 +1,11 @@
+--
+14-15m. (Artur)
+--
+
+1 trimestras
+Unity (raw medžiaga), pabandom blenderį (perhaps, jeigu nepaeis tai paruošt assetus);
+pradedam lipdyt multiplayer geimą. (controllai, kamera, kažkiek gameplay mechanikų);
+2 trimestras
+Tęsiam projektą - padarom character customization (neimą kad galėtum įsirašyti savo) + keliam viską į networką;
+3 trimestras
+Networko gameplay loopas kažkoks pasirinktas;
