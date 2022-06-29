@@ -14,7 +14,6 @@ public class StealthForPlayer : MonoBehaviour
 
     private Scanner _scanner;
     private StealthEventArgs _args;
-    private Transform _target;
     private bool _reacted = false;
     private float _woriedTimer = 0;
 
@@ -46,13 +45,12 @@ public class StealthForPlayer : MonoBehaviour
             _args = new StealthEventArgs
             {
                 Sender = transform,
-                Target = _target,
+                Target = args.Target,
                 ReactionTime = _timeToReact,
                 ForgetTargetTime = _timeToForgetTarget,
                 ElapsedReactionTime = _woriedTimer,
                 TargetTypes = args.TargetType
             };
-            _target = args.Target;
             if (_endWoriedTimerCoroutine != null)
                 StopCoroutine(_endWoriedTimerCoroutine);
             _startWoriedTimerCoroutine = StartCoroutine(StartWoriedTimer());
@@ -68,7 +66,6 @@ public class StealthForPlayer : MonoBehaviour
 
         if (!_reacted)
         {
-            _target = args.Target;
             if (_startWoriedTimerCoroutine != null)
                 StopCoroutine(_startWoriedTimerCoroutine);
             _endWoriedTimerCoroutine = StartCoroutine(EndWoriedTimer());
