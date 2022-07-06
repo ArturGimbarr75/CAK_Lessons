@@ -13,6 +13,9 @@ public class PlayerCameraMovement : MonoBehaviour
 
     void Update()
     {
+        if (Time.timeScale == 0)
+            return;
+
         Vector2 rawLookVector = new Vector2(Input.GetAxis("Mouse X"), Input.GetAxis("Mouse Y"));
         Vector2 lookVector = new Vector2(rawLookVector.x * _turnSpeed, rawLookVector.y * _turnSpeed);
 
