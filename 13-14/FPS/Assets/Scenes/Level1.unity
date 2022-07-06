@@ -963,10 +963,34 @@ MonoBehaviour:
   Interactable: 1
   OnPlatePressed:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2018775131}
+        m_TargetAssemblyTypeName: ChangeGasRoomState, Assembly-CSharp
+        m_MethodName: TurnOn
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   OnPlateReleased:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2018775131}
+        m_TargetAssemblyTypeName: ChangeGasRoomState, Assembly-CSharp
+        m_MethodName: TurnOff
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   _plate: {fileID: 3252868452931876160}
 --- !u!1 &152355237
 GameObject:
@@ -2975,7 +2999,19 @@ MonoBehaviour:
   Interactable: 1
   OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2041761024}
+        m_TargetAssemblyTypeName: ChangeCameraState, Assembly-CSharp
+        m_MethodName: ChangeState
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   _info: Turn on / off camera
   _animation: {fileID: 618759780}
 --- !u!111 &618759780
@@ -5286,7 +5322,7 @@ ParticleSystem:
   emitterVelocityMode: 1
   looping: 1
   prewarm: 0
-  playOnAwake: 1
+  playOnAwake: 0
   useUnscaledTime: 0
   autoRandomSeed: 1
   startDelay:
@@ -11542,7 +11578,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5015613352240251955, guid: 312e180ac2ce2fc4e855c662d7480ec5, type: 3}
   m_PrefabInstance: {fileID: 5015613353865066948}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 2041761018}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f1d0db68dfa1d394e926c7a3e50049be, type: 3}
@@ -12623,10 +12659,34 @@ MonoBehaviour:
   IsOn: 0
   OnToggleOn:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2023208459}
+        m_TargetAssemblyTypeName: SliderDoor, Assembly-CSharp
+        m_MethodName: OpenDoor
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   OnToggleOff:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2023208459}
+        m_TargetAssemblyTypeName: SliderDoor, Assembly-CSharp
+        m_MethodName: CloseDoor
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   _onMaterial: {fileID: 2100000, guid: 363c035fe7b0ac84990cf9db983e0e2d, type: 2}
   _offMaterial: {fileID: 2100000, guid: 25929afb9b453e14492d37ff29243c54, type: 2}
   _rotationObject: {fileID: 1271974909}
@@ -12801,6 +12861,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2018775130}
+  - component: {fileID: 2018775131}
   m_Layer: 0
   m_Name: GasRoom
   m_TagString: Untagged
@@ -12831,6 +12892,21 @@ Transform:
   m_Father: {fileID: 1758403673}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2018775131
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2018775129}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67e3fca4562bbe04396fbb9cb1ed9607, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _gas: {fileID: 1187807361}
+  _damager: {fileID: 380053982}
+  _pauseBeforeTurningOff: 2
 --- !u!1 &2023208454
 GameObject:
   m_ObjectHideFlags: 0
@@ -12843,6 +12919,7 @@ GameObject:
   - component: {fileID: 2023208458}
   - component: {fileID: 2023208457}
   - component: {fileID: 2023208456}
+  - component: {fileID: 2023208459}
   m_Layer: 0
   m_Name: Door
   m_TagString: Untagged
@@ -12928,6 +13005,21 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2023208454}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &2023208459
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2023208454}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 308a2e3aad665134eaf5a79e5a8c79a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _openPosition: {x: 0, y: 1.5, z: 8}
+  _closedPosition: {x: 0, y: 0.5, z: 8}
+  _speed: 3
 --- !u!1 &2034224829
 GameObject:
   m_ObjectHideFlags: 0
@@ -13157,6 +13249,23 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2035122860}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &2041761018 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5015613352240251946, guid: 312e180ac2ce2fc4e855c662d7480ec5, type: 3}
+  m_PrefabInstance: {fileID: 5015613353865066948}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2041761024
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2041761018}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ca5832bb963e02478015eedd553b2e2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2071456726
 GameObject:
   m_ObjectHideFlags: 0
