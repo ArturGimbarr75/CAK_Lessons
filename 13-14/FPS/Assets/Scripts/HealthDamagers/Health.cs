@@ -27,14 +27,14 @@ public class Health : MonoBehaviour
 
         float res = Mathf.Max(damage, _currentHealth);
         _currentHealth = Mathf.Clamp(_currentHealth - damage, 0, _maxHealth);
-        OnHealthValueChanged.Invoke(new HealthEventArgs()
+        OnHealthValueChanged?.Invoke(new HealthEventArgs()
         {
             CurrentHealth = _currentHealth,
             MaxHealth = _maxHealth
         });
 
         if (_currentHealth <= 0)
-            OnHealthEnd.Invoke();
+            OnHealthEnd?.Invoke();
 
         return res;
     }
@@ -46,7 +46,7 @@ public class Health : MonoBehaviour
 
         float res = Mathf.Min(health, MaxHealth - _currentHealth);
         _currentHealth = Mathf.Clamp(_currentHealth + health, 0, _maxHealth);
-        OnHealthValueChanged.Invoke(new HealthEventArgs()
+        OnHealthValueChanged?.Invoke(new HealthEventArgs()
         {
             CurrentHealth = _currentHealth,
             MaxHealth = _maxHealth

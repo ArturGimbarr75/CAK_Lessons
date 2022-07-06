@@ -304,8 +304,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f1d0db68dfa1d394e926c7a3e50049be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _timeToReact: 1
-  _timeToForgetTarget: 1
+  _timeToReact: 5
+  _timeToForgetTarget: 10
 --- !u!114 &5015613352240251953
 MonoBehaviour:
   m_ObjectHideFlags: 0
