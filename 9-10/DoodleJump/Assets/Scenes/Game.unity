@@ -245,7 +245,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 7.978955
+  orthographic size: 7.4846835
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -575,11 +575,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _platformPrefabs:
+  - {fileID: 2258195717176754858, guid: 453a94947d47576408197a81837112a5, type: 3}
+  - {fileID: 7001967936750291857, guid: f632a1d4f372b684c8a8ec571d6697d6, type: 3}
+  - {fileID: 2865429065010422052, guid: 9c20adeb5d590e848ad30e7d0013850d, type: 3}
   - {fileID: 7388960425673518876, guid: ddac13da820d49647885c051a5d69d6a, type: 3}
+  - {fileID: 9111053834034741014, guid: 265f979700b3f6649b67fca4fef68142, type: 3}
   _enemyPrefabs: []
   _coinPrefab: {fileID: 0}
   _minYGenerationRange: 4
-  _maxYGenerationRange: 8
+  _maxYGenerationRange: 4.5
   _spawnDistance: 30
   _coinCreationProbability: 0
   _enemyCreationProbability: 0
