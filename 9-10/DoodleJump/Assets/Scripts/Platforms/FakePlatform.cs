@@ -12,6 +12,7 @@ public class FakePlatform : MonoBehaviour
     {
         if (collision.transform == Player.Instance)
         { 
+            Destroy(collision.transform.GetComponent<Collider2D>());
             StartCoroutine(Remove());
             gameObject.AddComponent<Rigidbody2D>().angularVelocity = Random.Range(360, 720);
         }

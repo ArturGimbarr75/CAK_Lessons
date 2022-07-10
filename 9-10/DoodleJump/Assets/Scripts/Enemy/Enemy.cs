@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(AudioSource))]
 public class Enemy : MonoBehaviour
 {
     [SerializeField, Min(0)] private float _additionalHeight;
@@ -17,6 +18,7 @@ public class Enemy : MonoBehaviour
                 Player.Instance.GetComponent<Collider2D>().enabled = false;
                 Player.Instance.GetComponent<PlayerHorizontalMovement>().enabled = false;
                 Player.Instance.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
+                GetComponent<AudioSource>().Play();
             }
             else
             {

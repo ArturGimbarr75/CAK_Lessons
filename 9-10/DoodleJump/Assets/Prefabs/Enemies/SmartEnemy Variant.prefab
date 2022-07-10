@@ -149,7 +149,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2941165532701149472, guid: e4babc05d7923c345b2a1b459c5d4631, type: 3}
       propertyPath: m_Name
-      value: SmartEnemy
+      value: SmartEnemy Variant
       objectReference: {fileID: 0}
     - target: {fileID: 2941165532701149474, guid: e4babc05d7923c345b2a1b459c5d4631, type: 3}
       propertyPath: m_RootOrder
@@ -193,6 +193,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2941165532701149474, guid: e4babc05d7923c345b2a1b459c5d4631, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5759209670191619693, guid: e4babc05d7923c345b2a1b459c5d4631, type: 3}
+      propertyPath: m_Volume
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 5759209670191619693, guid: e4babc05d7923c345b2a1b459c5d4631, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 74cac37c7fbe47041a924ae7445faca0, type: 3}
+    - target: {fileID: 5759209670191619693, guid: e4babc05d7923c345b2a1b459c5d4631, type: 3}
+      propertyPath: m_PlayOnAwake
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
