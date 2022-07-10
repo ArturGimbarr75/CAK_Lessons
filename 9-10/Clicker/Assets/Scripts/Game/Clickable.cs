@@ -16,13 +16,13 @@ public class Clickable : MonoBehaviour
             transform.localScale = Vector3.one * _scaleCurve.Evaluate(time / _timeToClick);
             yield return wait;
         }
-        //Score.Instance.MissClick();
+        Score.Instance.MissClick();
         Destroy(gameObject);
     }
 
     private void OnMouseDown()
     {
-        //Score.Instance.Click();
+        Score.Instance.Click();
         Destroy(gameObject);
     }
 }
