@@ -17,7 +17,7 @@ public class PlayerJump : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.transform.TryGetComponent(out PlatformColliderController pcc))
+        if (collision.transform.TryGetComponent(out PlatformColliderController _))
             _rigidbody.AddForce(Vector2.up * _jumpForce, ForceMode2D.Impulse);
     }
 }

@@ -27,7 +27,7 @@ public class Score : MonoBehaviour
         int highscore = PlayerPrefs.GetInt(HIGHSCORE_PREF, 0);
 
         if (_panelScore != null)
-            _panelScore.text = $"Score: {_maxHeight}\nHighscore{Mathf.Max(_maxHeight, highscore)}";
+            _panelScore.text = $"Score: {_maxHeight}\nHighscore: {Mathf.Max(_maxHeight, highscore)}";
 
         if (highscore < _maxHeight)
             PlayerPrefs.SetInt(HIGHSCORE_PREF, _maxHeight);
