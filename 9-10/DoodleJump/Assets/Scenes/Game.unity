@@ -575,11 +575,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _platformPrefabs:
-  - {fileID: 2258195717176754858, guid: 453a94947d47576408197a81837112a5, type: 3}
-  - {fileID: 7001967936750291857, guid: f632a1d4f372b684c8a8ec571d6697d6, type: 3}
-  - {fileID: 2865429065010422052, guid: 9c20adeb5d590e848ad30e7d0013850d, type: 3}
-  - {fileID: 7388960425673518876, guid: ddac13da820d49647885c051a5d69d6a, type: 3}
-  - {fileID: 9111053834034741014, guid: 265f979700b3f6649b67fca4fef68142, type: 3}
+  - {fileID: 7959863901593640649, guid: 453a94947d47576408197a81837112a5, type: 3}
+  - {fileID: -3977346340758380130, guid: f632a1d4f372b684c8a8ec571d6697d6, type: 3}
+  - {fileID: 6981820002545228133, guid: 9c20adeb5d590e848ad30e7d0013850d, type: 3}
+  - {fileID: -7515216632608672456, guid: ddac13da820d49647885c051a5d69d6a, type: 3}
+  - {fileID: 1183753442510621175, guid: 265f979700b3f6649b67fca4fef68142, type: 3}
   _enemyPrefabs: []
   _coinPrefab: {fileID: 0}
   _minYGenerationRange: 4
