@@ -5,6 +5,8 @@ using UnityEngine;
 [RequireComponent(typeof(Camera))]
 public class CameraSize : MonoBehaviour
 {
+    [SerializeField] private float _borderSize;
+
     private Camera _camera;
 
     void Start()
@@ -15,7 +17,7 @@ public class CameraSize : MonoBehaviour
     private void ChangeSize()
     {
         _camera ??= GetComponent<Camera>();
-        float aspect = (Border.Instance?.Width ?? 20f / 2f) / (_camera.orthographicSize * _camera.aspect);
+        float aspect = (Border.Instance?.Width ?? _borderSize / 2f) / (_camera.orthographicSize * _camera.aspect);
         _camera.orthographicSize *= aspect * 0.5f;
     }
 
