@@ -23,6 +23,8 @@ public class PlayerFall : MonoBehaviour
         {
             _endGamePanel?.SetActive(true);
          
+            GetComponent<Score>().UpdatePanelInfo();
+
             Destroy(GetComponent<HorizontalDrag>());
             Destroy(GetComponent<PlayerHorizontalMovement>());
             Destroy(GetComponent<PlayerJump>());
