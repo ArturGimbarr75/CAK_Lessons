@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class Spawner : MonoBehaviour
 {
-    //[SerializeField] Timer _timer;
+    [SerializeField] Timer _timer;
     [SerializeField, Range(0.1f, 1)] private float _size;
     [SerializeField, Min(0.1f)] private float _spawnPause;
     [SerializeField, Min(1)] private int _spawnCount;
@@ -20,7 +20,7 @@ public class Spawner : MonoBehaviour
 
     IEnumerator Start()
     {
-        //yield return new WaitUntil(() =>_timer.IsTimerEnded);
+        yield return new WaitUntil(() =>_timer.IsTimerEnded);
         WaitForSeconds wait = new WaitForSeconds(_spawnPause);
         for (int i = 0; i < _spawnCount; i++)
         {
