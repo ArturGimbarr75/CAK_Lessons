@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
+[Serializable]
 public class UnityEventScanner : UnityEvent<ScannerEventArgs> {}
 
 public class ScannerEventArgs : EventArgs

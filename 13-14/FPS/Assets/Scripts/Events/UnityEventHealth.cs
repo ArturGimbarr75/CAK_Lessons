@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
+[Serializable]
 public class UnityEventHealth : UnityEvent<HealthEventArgs> { }
 
 public class HealthEventArgs : EventArgs

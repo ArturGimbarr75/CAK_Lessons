@@ -2,6 +2,7 @@
 using UnityEngine;
 using UnityEngine.Events;
 
+[Serializable]
 public class UnityEventStealth : UnityEvent<StealthEventArgs> { }
 
 public class StealthEventArgs : EventArgs
