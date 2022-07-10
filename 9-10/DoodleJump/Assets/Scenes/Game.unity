@@ -245,7 +245,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 7.4846835
+  orthographic size: 12.799767
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -720,6 +720,7 @@ MonoBehaviour:
   - {fileID: 1183753442510621175, guid: 265f979700b3f6649b67fca4fef68142, type: 3}
   _enemyPrefabs:
   - {fileID: 2941165532701149472, guid: e4babc05d7923c345b2a1b459c5d4631, type: 3}
+  - {fileID: 4854549099697995378, guid: 9e2a40ef86e601943a196b271e3febf3, type: 3}
   _coinPrefab: {fileID: 0}
   _minYGenerationRange: 4
   _maxYGenerationRange: 4.5
