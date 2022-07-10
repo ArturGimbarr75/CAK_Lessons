@@ -718,14 +718,15 @@ MonoBehaviour:
   - {fileID: 6981820002545228133, guid: 9c20adeb5d590e848ad30e7d0013850d, type: 3}
   - {fileID: -7515216632608672456, guid: ddac13da820d49647885c051a5d69d6a, type: 3}
   - {fileID: 1183753442510621175, guid: 265f979700b3f6649b67fca4fef68142, type: 3}
-  _enemyPrefabs: []
+  _enemyPrefabs:
+  - {fileID: 2941165532701149472, guid: e4babc05d7923c345b2a1b459c5d4631, type: 3}
   _coinPrefab: {fileID: 0}
   _minYGenerationRange: 4
   _maxYGenerationRange: 4.5
   _spawnDistance: 30
   _coinCreationProbability: 0
-  _enemyCreationProbability: 0
-  _enemyCreationYPosRange: 0
+  _enemyCreationProbability: 15
+  _enemyCreationYPosRange: 5
 --- !u!1 &1096049071
 GameObject:
   m_ObjectHideFlags: 0
