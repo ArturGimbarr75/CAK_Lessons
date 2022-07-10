@@ -13,6 +13,8 @@ public class Border : MonoBehaviour
 
     void Awake() => Instance = this;
 
+    public float GetRandomX() => Random.Range(LeftBorderX, RightBorderX);
+
 #if UNITY_EDITOR
 
     void OnDrawGizmos()
