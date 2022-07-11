@@ -9,7 +9,7 @@ public class Menu : MonoBehaviour
     public void LoadNextScene()
     {
         int buildIndex = SceneManager.GetActiveScene().buildIndex + 1;
-        buildIndex = SceneManager.sceneCountInBuildSettings >= buildIndex ? buildIndex : 0;
+        buildIndex = SceneManager.sceneCountInBuildSettings > buildIndex ? buildIndex : 0;
         SceneManager.LoadScene(buildIndex);
     }
     public void LoadMainMenu() => SceneManager.LoadScene(0);
