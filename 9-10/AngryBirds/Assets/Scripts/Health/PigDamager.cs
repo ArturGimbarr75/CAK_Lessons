@@ -5,6 +5,7 @@ using UnityEngine;
 [RequireComponent(typeof(Health), typeof(Rigidbody2D))]
 public class PigDamager : MonoBehaviour
 {
+    [SerializeField, Min(0)] private float _minDamage; 
     [SerializeField, Range(1f, 100)] private float _velocityMultiplier;
     private Rigidbody2D _rigidbody;
     private Health _health;
@@ -13,7 +14,8 @@ public class PigDamager : MonoBehaviour
     void LateUpdate()
     {
         _health ??= GetComponent<Health>();
-        _health.Hit(_recivedDamage);
+        if (_recivedDamage >= _minDamage)
+            _health.Hit(_recivedDamage);
         _recivedDamage = 0;
     }
 
