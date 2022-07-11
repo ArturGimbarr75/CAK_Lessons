@@ -6,7 +6,7 @@ using UnityEngine;
 public class PigDamager : MonoBehaviour
 {
     [SerializeField, Min(0)] private float _minDamage; 
-    [SerializeField, Range(1f, 100)] private float _velocityMultiplier;
+    [SerializeField, Range(0.5f, 10)] private float _velocityMultiplier;
     private Rigidbody2D _rigidbody;
     private Health _health;
     private float _recivedDamage = 0;

@@ -168,13 +168,40 @@ LineRenderer:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: 0.12820435
+        value: 0.046999156
         inSlope: 0
         outSlope: 0
         tangentMode: 0
         weightedMode: 0
         inWeight: 0.33333334
         outWeight: 0.33333334
+      - serializedVersion: 3
+        time: 0.11198428
+        value: 0.07279823
+        inSlope: -0.0018015448
+        outSlope: -0.0018015448
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 1
+        outWeight: 0.1217411
+      - serializedVersion: 3
+        time: 0.78977287
+        value: 0.076461956
+        inSlope: 0.004198667
+        outSlope: 0.004198667
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      - serializedVersion: 3
+        time: 1
+        value: 0.025634766
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
