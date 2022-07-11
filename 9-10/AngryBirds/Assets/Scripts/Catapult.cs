@@ -56,6 +56,7 @@ public class Catapult : MonoBehaviour
             return;
 
         _currentBird.GetComponent<Collider2D>().enabled = true;
+        _currentBird.GetComponent<BirdPath>().enabled = true;
         Vector2 direction = (transform.position - _currentBird.transform.position);
         float force = direction.magnitude / _maxDistanceFromCatapult;
         _currentBird.AddComponent<Rigidbody2D>()
