@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 
+[RequireComponent(typeof(LineRenderer))]
 public class Catapult : MonoBehaviour
 {
     [Header("Birds"), Space(5)]
@@ -13,12 +14,18 @@ public class Catapult : MonoBehaviour
     [SerializeField, Range(0, 50)] private float _impulse;
     [SerializeField] private Vector3 _offset;
     [SerializeField] private float _distanceInQueue;
+    
+    [Header("Aim")]
+    [SerializeField, Range(0.5f, 3)] private float _aimLength;
 
     private GameObject _currentBird;
     private List<GameObject> _pool;
+    private LineRenderer _lineRenderer;
 
     void Start()
     {
+        _lineRenderer = GetComponent<LineRenderer>();
+        _lineRenderer.positionCount = 2;
         _pool = new List<GameObject>();
         Vector3 pos = transform.position + _offset;
         foreach (GameObject bird in _birdPrefabsPool)
@@ -48,6 +55,8 @@ public class Catapult : MonoBehaviour
         Vector2 mouse = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         _currentBird.transform.position = Vector2.MoveTowards(transform.position, mouse,
             Mathf.Min(Vector2.Distance(transform.position, mouse), _maxDistanceFromCatapult));
+
+        _lineRenderer.SetPosition(1, ((Vector2)transform.position - mouse).normalized * _aimLength);       
     }
 
     private void OnMouseUp()
