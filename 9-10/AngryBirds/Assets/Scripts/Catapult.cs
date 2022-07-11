@@ -59,8 +59,10 @@ public class Catapult : MonoBehaviour
         _currentBird.GetComponent<BirdPath>().enabled = true;
         Vector2 direction = (transform.position - _currentBird.transform.position);
         float force = direction.magnitude / _maxDistanceFromCatapult;
-        _currentBird.AddComponent<Rigidbody2D>()
-            .AddForce(direction.normalized * _impulse * force, ForceMode2D.Impulse);
+        if (!_currentBird.TryGetComponent(out Rigidbody2D rigidbody))
+            rigidbody = _currentBird.AddComponent<Rigidbody2D>();
+        rigidbody.gravityScale = 1;
+        rigidbody.AddForce(direction.normalized * _impulse * force, ForceMode2D.Impulse);
     }
 
 #if UNITY_EDITOR
