@@ -15,7 +15,7 @@ public class ButtonsCreator : MonoBehaviour
         for (int i = 1; i < SceneManager.sceneCountInBuildSettings; i++)
         {
             GameObject temp = Instantiate(prefab);
-            temp.transform.parent = transform;
+            temp.transform.SetParent(transform);
             int buildIndex = i;
             temp.GetComponent<Button>().onClick.AddListener(delegate (){ SceneManager.LoadScene(buildIndex);});
             temp.GetComponentInChildren<TMP_Text>().text = $"Level {buildIndex}";
