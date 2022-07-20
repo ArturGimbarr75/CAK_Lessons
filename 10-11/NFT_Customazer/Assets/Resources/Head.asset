@@ -13,4 +13,12 @@ MonoBehaviour:
   m_Name: Head
   m_EditorClassIdentifier: 
   Sprites:
-  - {fileID: 739154810, guid: 1b62470f9e2b8a94f89c84ed583b15da, type: 3}
+  - {fileID: 1279091904, guid: b64adcc247814094c8934ef958029d3b, type: 3}
+  - {fileID: 112670445, guid: b64adcc247814094c8934ef958029d3b, type: 3}
+  - {fileID: -515565409, guid: b64adcc247814094c8934ef958029d3b, type: 3}
+  - {fileID: 1998325406, guid: b64adcc247814094c8934ef958029d3b, type: 3}
+  - {fileID: -1477688863, guid: b64adcc247814094c8934ef958029d3b, type: 3}
+  - {fileID: -1866419583, guid: b64adcc247814094c8934ef958029d3b, type: 3}
+  - {fileID: 1018760351, guid: b64adcc247814094c8934ef958029d3b, type: 3}
+  - {fileID: -675073697, guid: b64adcc247814094c8934ef958029d3b, type: 3}
+  - {fileID: 747154009, guid: b64adcc247814094c8934ef958029d3b, type: 3}
